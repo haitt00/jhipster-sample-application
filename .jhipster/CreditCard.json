@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20230208070919",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "credit_card",
+  "fields": [
+    {
+      "fieldName": "number",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bank",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "CreditCard",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "card",
+      "relationshipName": "cardHolder",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}
