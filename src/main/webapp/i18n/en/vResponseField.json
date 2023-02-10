@@ -1,0 +1,27 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "vResponseField": {
+      "home": {
+        "title": "V Response Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new V Response Field",
+        "createOrEditLabel": "Create or edit a V Response Field",
+        "notFound": "No V Response Fields found"
+      },
+      "created": "A new V Response Field is created with identifier {{ param }}",
+      "updated": "A V Response Field is updated with identifier {{ param }}",
+      "deleted": "A V Response Field is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete V Response Field {{ id }}?"
+      },
+      "detail": {
+        "title": "V Response Field"
+      },
+      "id": "ID",
+      "endpointId": "Endpoint Id",
+      "code": "Code",
+      "name": "Name",
+      "vEndpoint": "V Endpoint"
+    }
+  }
+}

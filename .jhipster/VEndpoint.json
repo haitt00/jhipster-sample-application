@@ -1,0 +1,49 @@
+{
+  "applications": "*",
+  "changelogDate": "20230210080051",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "v_endpoint",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "method",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "VEndpoint",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "vRequestField",
+      "otherEntityRelationshipName": "vEndpoint",
+      "relationshipName": "vRequestField",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "vResponseField",
+      "otherEntityRelationshipName": "vEndpoint",
+      "relationshipName": "vResponseField",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}
