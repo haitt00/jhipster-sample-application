@@ -1,0 +1,40 @@
+entity VEndpoint{
+    code String,
+    name String,
+    description String,
+    url String,
+    method String,
+}
+
+entity VRequestField{
+	endpointId Long,
+	code String,
+    name String,
+}
+
+entity VResponseField{
+	endpointId Long,
+	code String,
+    name String,
+}
+
+
+relationship OneToMany {
+    VEndpoint to VRequestField
+    VEndpoint to VResponseField
+}
+
+
+// Set pagination options
+paginate * with pagination except VAbstractAuditingEntity
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct except VAbstractAuditingEntity
+
+// Set service options to all except few
+service * with serviceImpl except VAbstractAuditingEntity 
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
+
+
