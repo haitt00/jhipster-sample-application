@@ -1,0 +1,27 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "vRequestField": {
+      "home": {
+        "title": "V Request Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new V Request Field",
+        "createOrEditLabel": "Create or edit a V Request Field",
+        "notFound": "No V Request Fields found"
+      },
+      "created": "A new V Request Field is created with identifier {{ param }}",
+      "updated": "A V Request Field is updated with identifier {{ param }}",
+      "deleted": "A V Request Field is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete V Request Field {{ id }}?"
+      },
+      "detail": {
+        "title": "V Request Field"
+      },
+      "id": "ID",
+      "endpointId": "Endpoint Id",
+      "code": "Code",
+      "name": "Name",
+      "vEndpoint": "V Endpoint"
+    }
+  }
+}

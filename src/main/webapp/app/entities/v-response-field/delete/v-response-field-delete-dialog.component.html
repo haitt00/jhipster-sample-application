@@ -1,0 +1,28 @@
+<form *ngIf="vResponseField" name="deleteForm" (ngSubmit)="confirmDelete(vResponseField.id!)">
+  <div class="modal-header">
+    <h4 class="modal-title" data-cy="vResponseFieldDeleteDialogHeading" jhiTranslate="entity.delete.title">Confirm delete operation</h4>
+
+    <button type="button" class="btn-close" data-dismiss="modal" aria-hidden="true" (click)="cancel()">&times;</button>
+  </div>
+
+  <div class="modal-body">
+    <jhi-alert-error></jhi-alert-error>
+    <p
+      id="jhi-delete-vResponseField-heading"
+      jhiTranslate="jhipsterSampleApplicationApp.vResponseField.delete.question"
+      [translateValues]="{ id: vResponseField.id }"
+    >
+      Are you sure you want to delete V Response Field {{ vResponseField.id }}?
+    </p>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="cancel()">
+      <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+    </button>
+
+    <button id="jhi-confirm-delete-vResponseField" data-cy="entityConfirmDeleteButton" type="submit" class="btn btn-danger">
+      <fa-icon icon="times"></fa-icon>&nbsp;<span jhiTranslate="entity.action.delete">Delete</span>
+    </button>
+  </div>
+</form>

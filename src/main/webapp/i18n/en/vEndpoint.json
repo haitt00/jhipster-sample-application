@@ -1,0 +1,30 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "vEndpoint": {
+      "home": {
+        "title": "V Endpoints",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new V Endpoint",
+        "createOrEditLabel": "Create or edit a V Endpoint",
+        "notFound": "No V Endpoints found"
+      },
+      "created": "A new V Endpoint is created with identifier {{ param }}",
+      "updated": "A V Endpoint is updated with identifier {{ param }}",
+      "deleted": "A V Endpoint is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete V Endpoint {{ id }}?"
+      },
+      "detail": {
+        "title": "V Endpoint"
+      },
+      "id": "ID",
+      "code": "Code",
+      "name": "Name",
+      "description": "Description",
+      "url": "Url",
+      "method": "Method",
+      "vRequestField": "V Request Field",
+      "vResponseField": "V Response Field"
+    }
+  }
+}

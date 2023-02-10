@@ -1,0 +1,48 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="vResponseField">
+      <h2 data-cy="vResponseFieldDetailsHeading">
+        <span jhiTranslate="jhipsterSampleApplicationApp.vResponseField.detail.title">V Response Field</span>
+      </h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ vResponseField.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplicationApp.vResponseField.endpointId">Endpoint Id</span></dt>
+        <dd>
+          <span>{{ vResponseField.endpointId }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplicationApp.vResponseField.code">Code</span></dt>
+        <dd>
+          <span>{{ vResponseField.code }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplicationApp.vResponseField.name">Name</span></dt>
+        <dd>
+          <span>{{ vResponseField.name }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplicationApp.vResponseField.vEndpoint">V Endpoint</span></dt>
+        <dd>
+          <div *ngIf="vResponseField.vEndpoint">
+            <a [routerLink]="['/v-endpoint', vResponseField.vEndpoint.id, 'view']">{{ vResponseField.vEndpoint.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/v-response-field', vResponseField.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity VRequestField.
+    -->
+    <changeSet id="20230210080052-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="v_endpoint_id"
+                                 baseTableName="v_request_field"
+                                 constraintName="fk_v_request_field__v_endpoint_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="v_endpoint"/>
+    </changeSet>
+</databaseChangeLog>

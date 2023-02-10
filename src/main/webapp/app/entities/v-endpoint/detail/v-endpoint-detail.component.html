@@ -1,0 +1,48 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="vEndpoint">
+      <h2 data-cy="vEndpointDetailsHeading"><span jhiTranslate="jhipsterSampleApplicationApp.vEndpoint.detail.title">V Endpoint</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ vEndpoint.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplicationApp.vEndpoint.code">Code</span></dt>
+        <dd>
+          <span>{{ vEndpoint.code }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplicationApp.vEndpoint.name">Name</span></dt>
+        <dd>
+          <span>{{ vEndpoint.name }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplicationApp.vEndpoint.description">Description</span></dt>
+        <dd>
+          <span>{{ vEndpoint.description }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplicationApp.vEndpoint.url">Url</span></dt>
+        <dd>
+          <span>{{ vEndpoint.url }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplicationApp.vEndpoint.method">Method</span></dt>
+        <dd>
+          <span>{{ vEndpoint.method }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/v-endpoint', vEndpoint.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>
