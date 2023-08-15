@@ -6,7 +6,7 @@
     "blueprints": [],
     "buildTool": "maven",
     "cacheProvider": "ehcache",
-    "clientFramework": "angularX",
+    "clientFramework": "angular",
     "clientPackageManager": "npm",
     "clientTheme": "none",
     "clientThemeVariant": "",
@@ -19,6 +19,7 @@
     "enableHibernateCache": true,
     "enableSwaggerCodegen": false,
     "enableTranslation": true,
+    "entities": [],
     "entitySuffix": "",
     "gitCompany": "",
     "jhiPrefix": "jhi",
@@ -45,7 +46,7 @@
     "websocket": false,
     "withAdminUi": true
   },
-  "git-provider": "GitHub",
   "git-company": "haitt00",
+  "git-provider": "GitHub",
   "repository-name": "jhipster-sample-application"
 }
