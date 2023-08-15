@@ -1,5 +1,6 @@
 {
   "applications": "*",
+  "changelogDate": "20230815084147",
   "entityTableName": "job",
   "fields": [
     {
@@ -32,5 +33,6 @@
       "relationshipSide": "right",
       "relationshipType": "many-to-one"
     }
-  ]
+  ],
+  "searchEngine": "no"
 }

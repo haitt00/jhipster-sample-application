@@ -1,5 +1,6 @@
 {
   "applications": "*",
+  "changelogDate": "20230815084144",
   "entityTableName": "location",
   "fields": [
     {
@@ -29,5 +30,6 @@
       "relationshipType": "one-to-one"
     }
   ],
+  "searchEngine": "no",
   "service": "serviceImpl"
 }

@@ -1,5 +1,6 @@
 {
   "applications": "*",
+  "changelogDate": "20230815084149",
   "entityTableName": "job_history",
   "fields": [
     {
@@ -38,5 +39,6 @@
       "relationshipType": "one-to-one"
     }
   ],
+  "searchEngine": "no",
   "service": "serviceImpl"
 }
